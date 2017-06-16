@@ -1,0 +1,173 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+} /*This is to hopefully keep it from highlighting blue in Silk.*/
+
+html {
+  background-color: #fffff9;
+  font-size: 20px;
+  font-family: Helvetica;
+  cursor: pointer;
+}
+/*This is the word being displayed section.*/
+#page {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*This is the word being displayed.*/
+span {
+  font-family: Helvetica;
+  color: black;
+  font-size: 9rem;
+  text-shadow: 2px 2px gray;
+}
+
+.directions {
+ margin: auto;
+ color: black;
+ width: 40%;
+ border: 3px solid black;
+ border-radius: 5px;
+}
+
+/*The writing in the directions*/
+p {
+  padding: 30px;
+}
+
+/*Header and logo are the EP banner*/
+header {
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+.check {
+  margin: auto;
+}
+
+#yes {
+  display: none;
+}
+
+i {
+  padding: 1rem 1rem;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*Start Game Direction Box*/
+#start {
+  padding: 1rem;
+  border: 5px solid #000;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.3;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+#start:hover {
+  background-color: #000;
+}
+
+
+.ready {
+  color: #fffff9;
+  font-size: 2rem;
+  text-align: center;
+  margin:auto;
+  padding: 0;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size: 5rem;
+  margin-top: 1.4rem;
+  padding: 0 2rem;
+}
+
+/*check mark*/
+#yes {
+  display: none;
+}
+
+#endScreen {
+  width: 90%;
+  display: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+  margin: auto;
+  color: black;
+}
+
+@media only screen and (max-width: 480px) {
+  #endScreen {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+   /*The writing in the directions*/
+   p {
+     padding: 5px;
+   }
+}
+
+@media only screen and (max-width: 960px) {
+  .logo {
+  width: 100%;
+  }
+  .directions {
+    margin: auto;
+    color: black;
+    width: 85%;
+    border: 3px solid black;
+    border-radius: 5px;
+   }
+   p {
+     padding: 15px;
+   }
+}
