@@ -6,10 +6,10 @@ html {
   background-color: #fffff9;
   font-size: 20px;
   font-family: Helvetica;
-  cursor: pointer;
 }
 /*This is the word being displayed section.*/
 #page {
+  cursor: pointer;
   font-weight: bold;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,6 +69,7 @@ header {
 }
 
 #yes {
+  cursor: pointer;
   display: none;
 }
 
@@ -94,6 +95,7 @@ i {
 
 /*Start Game Direction Box*/
 #start {
+  cursor: pointer;
   padding: 1rem;
   border: 5px solid #000;
   border-radius: 15px;
@@ -124,12 +126,8 @@ h2 {
   padding: 0 2rem;
 }
 
-/*check mark*/
-#yes {
-  display: none;
-}
-
 #endScreen {
+  cursor: pointer;
   width: 90%;
   display: none;
   -ms-flex-wrap: wrap;
