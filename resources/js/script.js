@@ -35,6 +35,7 @@ function newWord($page, index) {
 function practiceWords($page, index) {
   if (wait === 2*L) {
     $('#yes').css('display', 'block');
+    wait++;
   } else {
     wait = wait + 1;
   }; //closes else
